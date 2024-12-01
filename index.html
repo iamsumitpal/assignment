@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    .iframe-container {
+      width: 90%;
+      max-width: 1200px; /* Adjust width for scaling */
+      height: calc((98vh / 1.5) * 1.5); /* Fully compensate for scaling */
+      overflow: hidden; /* Hide unnecessary scrollbars */
+      position: relative;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: absolute;
+      transform: scale(1.5); /* Zoom in by 50% */
+      transform-origin: 0 0; /* Anchor scaling to the top-left corner */
+    }
+
+    /* Hide scrollbar for iframe content */
+    iframe::-webkit-scrollbar {
+      display: none; /* For WebKit browsers (Chrome, Safari) */
+    }
+    iframe {
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
+      scrollbar-width: none; /* For Firefox */
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <iframe 
+      src="https://docs.google.com/document/d/e/2PACX-1vQ1r11D5Asu6vOmY9zpvUdQf9JngB5eqvQ07UeKFi0x4OM9b2pLa3hwy39K-CyxPROA_2sXTm2cP3kx/pub?embedded=true">
+    </iframe>
+  </div>
+</body>
+</html>
+
